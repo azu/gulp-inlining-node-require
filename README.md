@@ -1,4 +1,4 @@
-# gulp-inlining-node-require [![Build Status](https://travis-ci.org/azu/promises-book.png?branch=master)](https://travis-ci.org/azu/promises-book)
+# gulp-inlining-node-require [![Build Status](https://travis-ci.org/azu/gulp-inlining-node-require.png?branch=master)](https://travis-ci.org/azu/gulp-inlining-node-require)
 
 > inlining-node-require plugin for [gulp](https://github.com/wearefractal/gulp)
 
