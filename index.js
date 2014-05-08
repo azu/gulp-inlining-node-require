@@ -20,7 +20,13 @@ module.exports = function (options) {
 
         // check if file.contents is a `Buffer`
         if (file.isBuffer()) {
-            file.contents = new Buffer(inlining(file.path, options));
+            try {
+                file.contents = new Buffer(inlining(file.path, options));
+            } catch (error) {
+                this.emit("error",
+                    new gutil.PluginError("gulp-inlining-node-require", "Could not inlining file " + file.path));
+                return callback();
+            }
             this.push(file);
 
         }
