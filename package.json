@@ -15,9 +15,9 @@
     "test": "mocha --report html -- test/*.js --reporter spec"
   },
   "dependencies": {
-    "gulp-util": "~3.0.8",
-    "inlining-node-require": "*",
-    "through2": "*"
+    "gulp-util": "^3.0.8",
+    "inlining-node-require": "^0.2.0",
+    "through2": "^3.0.1"
   },
   "devDependencies": {
     "coveralls": "*",
